@@ -9,3 +9,6 @@ build
 
 # SvelteKit output
 .svelte-kit
+
+# Wrangler output
+.wrangler
