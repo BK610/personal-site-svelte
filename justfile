@@ -8,10 +8,8 @@ commit: lint-fix format
     cz c
 
 # Commit some files
-commitf *files:
-    lint-fix
-    format
-    git add {files}
+commitf *files: lint-fix format
+    git add {{files}}
     cz c
 
 # List all just commands
