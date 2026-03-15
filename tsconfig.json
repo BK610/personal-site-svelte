@@ -11,11 +11,6 @@
     "sourceMap": true,
     "strict": true,
     "moduleResolution": "bundler",
-    "types": ["./worker-configuration.d.ts"],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"],
-      "@lib/*": ["./src/lib/*"]
-    }
+    "types": ["./worker-configuration.d.ts"]
   }
 }
