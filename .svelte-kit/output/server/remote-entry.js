@@ -56,7 +56,7 @@ function create_validator(validate_or_fn, maybe_fn) {
   );
 }
 async function get_response(info, arg, state, get_result) {
-  0;
+  await 0;
   const cache = get_cache(info, state);
   return (cache[stringify_remote_arg(arg, state.transport)] ??= get_result());
 }

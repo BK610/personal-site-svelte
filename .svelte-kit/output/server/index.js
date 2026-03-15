@@ -645,7 +645,7 @@ function server_data_serializer(event, event_state, options2) {
     },
     get_data(csp) {
       const open = `<script${csp.script_needs_nonce ? ` nonce="${csp.nonce}"` : ""}>`;
-      const close = `</script>
+      const close = `<\/script>
 `;
       return {
         data: `[${compact(max_nodes > -1 ? strings.slice(0, max_nodes) : strings).join(",")}]`,
@@ -1175,7 +1175,7 @@ function serialize_data(fetched, filter, prerendering = false) {
       attrs.push(`data-ttl="${ttl}"`);
     }
   }
-  return `<script ${attrs.join(" ")}>${safe_payload}</script>`;
+  return `<script ${attrs.join(" ")}>${safe_payload}<\/script>`;
 }
 const s = JSON.stringify;
 function sha256(data) {
@@ -2138,7 +2138,7 @@ ${indent}}`);
 			`;
     csp.add_script(init_app);
     body2 += `
-			<script${csp.script_needs_nonce ? ` nonce="${csp.nonce}"` : ""}>${init_app}</script>
+			<script${csp.script_needs_nonce ? ` nonce="${csp.nonce}"` : ""}>${init_app}<\/script>
 		`;
   }
   const headers2 = new Headers({

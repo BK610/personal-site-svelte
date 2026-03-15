@@ -29,7 +29,7 @@ import {
   x as ft,
   y as Pe,
   z as ut,
-} from "./DQ9W_XTn.js";
+} from "./CcYKbvd6.js";
 class me {
   constructor(t, a) {
     ((this.status = t),
@@ -153,7 +153,7 @@ let m = { branch: [], error: null, url: null },
 const te = new Set(),
   Ie = new Map();
 async function Dt(e, t, a) {
-  (globalThis.__sveltekit_5054m0?.data && globalThis.__sveltekit_5054m0.data,
+  (globalThis.__sveltekit_1jskcsw?.data && globalThis.__sveltekit_1jskcsw.data,
     document.URL !== location.href && (location.href = location.href),
     (y = e),
     await e.hooks.init?.(),

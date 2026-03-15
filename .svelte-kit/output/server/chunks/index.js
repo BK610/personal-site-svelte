@@ -1454,7 +1454,7 @@ class Renderer {
       this.global.csp.script_hashes.push(`sha256-${hash}`);
     }
     return `
-		<script${csp_attr}>${body}</script>`;
+		<script${csp_attr}>${body}<\/script>`;
   }
 }
 class SSRState {

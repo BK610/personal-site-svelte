@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-pnpm dlx sv@0.12.7 create --template minimal --types ts --add prettier sveltekit-adapter="adapter:cloudflare+cfTarget:workers" vitest="usages:unit,component" playwright --install pnpm svelte-personal-site-rewrite
+pnpm dlx sv@0.12.7 create --template minimal --types ts --add prettier sveltekit-adapter="adapter:cloudflare+cfTarget:workers" vitest="usages:unit,component" playwright --install pnpm personal-site-svelte
 ```
 
 ## Developing

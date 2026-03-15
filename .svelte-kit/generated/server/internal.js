@@ -35,11 +35,11 @@ export const options = {
   server_error_boundaries: false,
   templates: {
     app: ({ head, body, assets, nonce, env }) =>
-      '<!doctype html>\n<html lang="en">\n\t<head>\n\t\t<meta charset="utf-8" />\n\t\t<meta name="viewport" content="width=device-width, initial-scale=1" />\n\t\t' +
+      '<!doctype html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\n    ' +
       head +
-      '\n\t</head>\n\t<body data-sveltekit-preload-data="hover">\n\t\t<div style="display: contents">' +
+      '\n  </head>\n  <body data-sveltekit-preload-data="hover">\n    <div style="display: contents">' +
       body +
-      "</div>\n\t</body>\n</html>\n",
+      "</div>\n  </body>\n</html>\n",
     error: ({ status, message }) =>
       '<!doctype html>\n<html lang="en">\n\t<head>\n\t\t<meta charset="utf-8" />\n\t\t<title>' +
       message +
@@ -49,7 +49,7 @@ export const options = {
       message +
       "</h1>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
   },
-  version_hash: "5054m0",
+  version_hash: "1jskcsw",
 };
 
 export async function get_hooks() {

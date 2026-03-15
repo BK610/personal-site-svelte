@@ -8,13 +8,13 @@ const __vite__mapDeps = (
       "../chunks/PUWf84Ah.js",
       "../chunks/CXQ1_rKg.js",
       "../chunks/DYJXOdPT.js",
-      "../nodes/1.CQDSLQTy.js",
+      "../nodes/1.BJGSPC7b.js",
       "../chunks/DH-PflIw.js",
-      "../chunks/DQ9W_XTn.js",
+      "../chunks/CcYKbvd6.js",
       "../chunks/B0IYIc1v.js",
-      "../chunks/2g37R7Mr.js",
+      "../chunks/CU95D5Fw.js",
       "../nodes/2.CfCpUlD2.js",
-      "../nodes/3.Dypyg-tj.js",
+      "../nodes/3.CadV30VF.js",
       "../nodes/4.DCuWAfWL.js",
     ]),
 ) => i.map((i) => d[i]);
@@ -230,7 +230,7 @@ class qe {
         return (s.set(a, t), t);
       };
     const i = new Proxy(
-      { ...e.props, $$events: {} },
+      { ...(e.props || {}), $$events: {} },
       {
         get(a, n) {
           return g(s.get(n) ?? c(n, Reflect.get(a, n)));
@@ -510,7 +510,7 @@ const rt = Ve(Je),
       ),
     () =>
       w(
-        () => import("../nodes/1.CQDSLQTy.js"),
+        () => import("../nodes/1.BJGSPC7b.js"),
         __vite__mapDeps([5, 1, 2, 6, 7, 8, 9]),
         import.meta.url,
       ),
@@ -522,7 +522,7 @@ const rt = Ve(Je),
       ),
     () =>
       w(
-        () => import("../nodes/3.Dypyg-tj.js"),
+        () => import("../nodes/3.CadV30VF.js"),
         __vite__mapDeps([11, 1, 2, 4, 7, 8]),
         import.meta.url,
       ),

@@ -104,9 +104,9 @@ const valid_page_exports = /* @__PURE__ */ new Set([
   ...valid_layout_exports,
   "entries",
 ]);
-const valid_layout_server_exports = /* @__PURE__ */ new Set(
-  valid_layout_exports,
-);
+const valid_layout_server_exports = /* @__PURE__ */ new Set([
+  ...valid_layout_exports,
+]);
 const valid_page_server_exports = /* @__PURE__ */ new Set([
   ...valid_layout_server_exports,
   "actions",

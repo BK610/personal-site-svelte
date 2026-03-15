@@ -2734,7 +2734,7 @@ class Svelte4Component {
       return s;
     };
     const props = new Proxy(
-      { ...options.props, $$events: {} },
+      { ...(options.props || {}), $$events: {} },
       {
         get(target, prop) {
           return get(

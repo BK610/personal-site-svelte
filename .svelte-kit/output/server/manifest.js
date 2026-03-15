@@ -11,15 +11,15 @@ export const manifest = (() => {
     mimeTypes: { ".txt": "text/plain" },
     _: {
       client: {
-        start: "_app/immutable/entry/start.BAOGT8gC.js",
-        app: "_app/immutable/entry/app.De_VH3h6.js",
+        start: "_app/immutable/entry/start.C5v8Oy99.js",
+        app: "_app/immutable/entry/app.BmqZfB87.js",
         imports: [
-          "_app/immutable/entry/start.BAOGT8gC.js",
-          "_app/immutable/chunks/2g37R7Mr.js",
+          "_app/immutable/entry/start.C5v8Oy99.js",
+          "_app/immutable/chunks/CU95D5Fw.js",
           "_app/immutable/chunks/PUWf84Ah.js",
-          "_app/immutable/chunks/DQ9W_XTn.js",
+          "_app/immutable/chunks/CcYKbvd6.js",
           "_app/immutable/chunks/B0IYIc1v.js",
-          "_app/immutable/entry/app.De_VH3h6.js",
+          "_app/immutable/entry/app.BmqZfB87.js",
           "_app/immutable/chunks/PUWf84Ah.js",
           "_app/immutable/chunks/DH-PflIw.js",
           "_app/immutable/chunks/BwuXgrL6.js",

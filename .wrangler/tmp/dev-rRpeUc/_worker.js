@@ -2671,10 +2671,7 @@ function get_derived_parent_effect(derived2) {
   var parent = derived2.parent;
   while (parent !== null) {
     if ((parent.f & DERIVED) === 0) {
-      return (parent.f & DESTROYED) === 0
-        ? /** @type {Effect} */
-          parent
-        : null;
+      return (parent.f & DESTROYED) === 0 ? /** @type {Effect} */ parent : null;
     }
     parent = parent.parent;
   }
