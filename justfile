@@ -1,6 +1,6 @@
 # Build the project
 build:
-    pnpm run build
+    pnpm build
 
 # Commit all edited files
 commit: lint-fix format
@@ -9,7 +9,7 @@ commit: lint-fix format
 
 # Commit some files
 commitf *files: lint-fix format
-    git add {{files}}
+    git add {{ files }}
     cz c
 
 # List all just commands
@@ -19,33 +19,33 @@ default:
 
 # DANGEROUS: Deploy the project
 deploy: format lint-fix build
-    pnpm run gen
+    pnpm gen
     npx wrangler deploy
 
 # Run the development server
 dev:
-    pnpm run dev
+    pnpm dev
 
 # Run the formatter
 format:
-    pnpm run format
+    pnpm format
 
 # Run the linter
 lint:
-    pnpm run lint
+    pnpm lint
 
 # Run the linter and fix safe issues
 lint-fix:
-    pnpm run lint:fix
+    pnpm lint:fix
 
 # Run the tests
 test:
-    pnpm run test
+    pnpm test
 
 # Run the unit tests
 test-unit:
-    pnpm run test:unit
+    pnpm test:unit
 
 # Run the end-to-end tests
 test-e2e:
-    pnpm run test:e2e
+    pnpm test:e2e
