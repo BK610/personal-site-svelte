@@ -12,3 +12,6 @@ build
 
 # Wrangler output
 .wrangler
+
+# Environment variables
+.env
