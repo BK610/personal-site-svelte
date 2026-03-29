@@ -1,6 +1,11 @@
 <script lang="ts">
   import favicon from "$lib/assets/favicon.svg";
   import NavigationSelect from "@/lib/components/organisms/navigationSelect.svelte";
+  import "$lib/view-transitions.css";
+  import { enablePageViewTransitions } from "$lib/view-transitions";
+
+  enablePageViewTransitions();
+
   let { children } = $props();
 </script>
 

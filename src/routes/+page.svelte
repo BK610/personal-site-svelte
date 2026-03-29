@@ -1,5 +1,7 @@
 <section>
   <h1>Hello hello, this is Bailey speaking.</h1>
+  <a href={"/about"}>About me →</a>
+  <a href={"/books"}>My books →</a>
   <p>
     I help small business owners solve problems with technology, so they can
     reclaim their time and focus on the things that matter. Contact me at
