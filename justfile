@@ -30,6 +30,10 @@ dev:
 format:
     pnpm format
 
+# Run knip to check for unused dependencies and code
+knip:
+    pnpm knip
+
 # Run the linter
 lint:
     pnpm lint

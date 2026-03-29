@@ -15,6 +15,3 @@ export const booksApiResponseSchema = z.object({
 
 /** Type inferred from the book schema — use throughout the app */
 export type Book = z.infer<typeof bookSchema>;
-
-/** Type inferred from the API response schema */
-export type BooksApiResponse = z.infer<typeof booksApiResponseSchema>;
