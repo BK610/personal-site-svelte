@@ -1,9 +1,10 @@
 <script lang="ts">
   import favicon from "$lib/assets/favicon.svg";
-  import NavigationSelect from "@/lib/components/organisms/navigationSelect.svelte";
+  import Navigation from "@/lib/components/organisms/navigation.svelte";
+
+  // Set up view transitions
   import "$lib/view-transitions.css";
   import { enablePageViewTransitions } from "$lib/view-transitions";
-
   enablePageViewTransitions();
 
   let { children } = $props();
@@ -14,9 +15,9 @@
 </svelte:head>
 
 <div class="page-frame">
-  <nav>
-    <NavigationSelect />
-  </nav>
+  <header>
+    <Navigation />
+  </header>
   <main>
     {@render children()}
   </main>
@@ -24,6 +25,43 @@
 </div>
 
 <style>
+  header {
+    height: 3rem;
+    padding: 1rem;
+  }
+
+  .page-frame {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+  }
+
+  .page-frame > header,
+  .page-frame > footer {
+    flex-shrink: 0;
+  }
+
+  .page-frame > main {
+    flex: 1 1 auto;
+  }
+
+  footer {
+    background-image: url("$lib/assets/Footer.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 110px;
+    border-top: 1px solid #a39c96;
+    text-align: center;
+    padding-top: 0.3rem;
+    margin-top: 1rem;
+  }
+
+  footer span {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
   :global {
     /**
     Font imports
@@ -34,9 +72,9 @@
       font-family: "Poppins", sans-serif;
     }
     /*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+      Josh's Custom CSS Reset
+      https://www.joshwcomeau.com/css/custom-css-reset/
+    */
 
     *,
     *::before,
@@ -108,37 +146,5 @@
     #__next {
       isolation: isolate;
     }
-  }
-
-  .page-frame {
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
-  }
-
-  .page-frame > nav,
-  .page-frame > footer {
-    flex-shrink: 0;
-  }
-
-  .page-frame > main {
-    flex: 1 1 auto;
-  }
-
-  footer {
-    background-image: url("$lib/assets/Footer.svg");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    height: 110px;
-    border-top: 1px solid #a39c96;
-    text-align: center;
-    padding-top: 0.3rem;
-    margin-top: 1rem;
-  }
-
-  footer span {
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    font-weight: 600;
   }
 </style>
