@@ -1,5 +1,5 @@
 import { BOOKS_DATA_URL } from "$env/static/private";
-import { booksApiResponseSchema, type Book } from "$lib/books";
+import { booksApiResponseSchema, type Book } from "@/lib/types/books";
 import { csvToJson } from "$lib/csv";
 
 /**
