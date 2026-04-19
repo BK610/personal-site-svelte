@@ -4,7 +4,7 @@
  * swap for subtler keyframes when you are happy with the setup.
  */
 
-@keyframes vt-fade-in {
+/* @keyframes vt-fade-in {
   from {
     opacity: 0;
   }
@@ -40,7 +40,7 @@
       240ms cubic-bezier(0, 0, 0.2, 1) 160ms both vt-fade-in,
       380ms cubic-bezier(0.4, 0, 0.2, 1) both vt-slide-from-right;
   }
-}
+} */
 
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-group(*),
