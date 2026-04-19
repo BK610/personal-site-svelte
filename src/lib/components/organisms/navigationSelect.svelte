@@ -7,6 +7,7 @@
 </script>
 
 <select onchange={handleNavigation} class="navigation-select">
+  <option value={""}>Select a page</option>
   <option value={"/"}>Home</option>
   <option value={"/about"}>About</option>
   <option value={"/projects"}>Projects</option>
