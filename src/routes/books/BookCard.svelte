@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Book } from "$lib/books";
+  import type { Book } from "@/lib/types/books";
 
   let { book, i }: { book: Book; i: number } = $props();
   const formattedReadDate = $derived(
@@ -35,7 +35,7 @@
     overflow: hidden;
     opacity: 0;
     animation: fadeIn 0.2s ease-out forwards;
-    animation-delay: calc(var(--i, 0) * 0.3s);
+    animation-delay: calc(var(--i, 0) * 0.15s);
   }
 
   .book:hover,
