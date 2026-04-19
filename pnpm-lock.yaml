@@ -7,6 +7,9 @@ settings:
 importers:
   .:
     dependencies:
+      "@tanstack/svelte-query":
+        specifier: ^6.1.18
+        version: 6.1.18(svelte@5.55.1)
       zod:
         specifier: ^4.3.6
         version: 4.3.6
@@ -1719,6 +1722,20 @@ packages:
     peerDependencies:
       svelte: ^5.46.4
       vite: ^8.0.0-beta.7 || ^8.0.0
+
+  "@tanstack/query-core@5.99.2":
+    resolution:
+      {
+        integrity: sha512-1HunU0bXVsR1ZJMZbcOPE6VtaBJxsW809RE9xPe4Gz7MlB0GWwQvuTPhMoEmQ/hIzFKJ/DWAuttIe7BOaWx0tA==,
+      }
+
+  "@tanstack/svelte-query@6.1.18":
+    resolution:
+      {
+        integrity: sha512-D26iBbSDJ1h3M/XrF+dTFsnDAr4fSGEj/BZxMtm47D4eYgPgW/5Q8f0gNlfwVTn8fjbOFAPT6Yyaf//4z+F4VQ==,
+      }
+    peerDependencies:
+      svelte: ^5.25.0
 
   "@testing-library/svelte-core@1.0.0":
     resolution:
@@ -3493,6 +3510,13 @@ snapshots:
       svelte: 5.55.1
       vite: 8.0.3(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@25.5.0)(esbuild@0.27.4)(jiti@2.6.1)(yaml@2.8.3)
       vitefu: 1.1.2(vite@8.0.3(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(@types/node@25.5.0)(esbuild@0.27.4)(jiti@2.6.1)(yaml@2.8.3))
+
+  "@tanstack/query-core@5.99.2": {}
+
+  "@tanstack/svelte-query@6.1.18(svelte@5.55.1)":
+    dependencies:
+      "@tanstack/query-core": 5.99.2
+      svelte: 5.55.1
 
   "@testing-library/svelte-core@1.0.0(svelte@5.55.1)":
     dependencies:
